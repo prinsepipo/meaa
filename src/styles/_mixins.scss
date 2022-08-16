@@ -1,0 +1,30 @@
+// Flexbox
+
+@mixin flex(
+  $justify: flex-start,
+  $align: flex-start,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-y-center {
+  display: flex;
+  align-items: center;
+}

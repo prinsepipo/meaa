@@ -1,0 +1,33 @@
+.header {
+  height: 80px;
+
+  background: $bg;
+
+  box-shadow: 0 4px 4px $shadow;
+
+  .wrapper {
+    @include flex-y-center;
+
+    width: 90vw;
+    height: 100%;
+  }
+
+  .hero-logo {
+    @include flex-y-center;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    h2 {
+      margin-left: 10px;
+
+      color: $fg;
+    }
+  }
+
+  .popup-navbar-toggler {
+    margin-left: auto;
+  }
+}
