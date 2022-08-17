@@ -1,0 +1,12 @@
+.navbar {
+  display: none;
+  margin-left: auto;
+
+  &-list {
+    @include flex(center, center);
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: block;
+  }
+}
