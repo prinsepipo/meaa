@@ -14,7 +14,6 @@ const Header = () => {
       <div className="wrapper">
         <a className="hero-logo" href="/">
           <img src={logo} alt="MEAA logo" />
-          <h2>MEAA</h2>
         </a>
 
         <Navbar />
