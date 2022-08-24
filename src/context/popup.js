@@ -7,6 +7,14 @@ const PopupProvider = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [popupComponent, setPopupComponent] = React.useState(null);
 
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
+
   const openPopup = (component) => {
     setIsOpen(true);
     setPopupComponent(component);

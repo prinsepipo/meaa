@@ -1,0 +1,22 @@
+.introduction {
+  margin: 4rem 0;
+
+  text-align: center;
+
+  h1 {
+    margin: 1rem 0;
+
+    background: linear-gradient(135deg, #1a1ad6 0%, #7c08db 70%);
+    background-clip: text;
+    color: transparent;
+
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  a {
+    display: block;
+
+    margin-top: 1rem;
+  }
+}

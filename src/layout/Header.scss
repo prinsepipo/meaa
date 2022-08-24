@@ -1,6 +1,14 @@
 .header {
   height: 80px;
 
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  background: $color-bg;
+
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+
   .wrapper {
     @include flex-y-center;
 
@@ -19,7 +27,7 @@
     h2 {
       margin-left: 10px;
 
-      color: $fg;
+      color: $color-fg;
     }
   }
 

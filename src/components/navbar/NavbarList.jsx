@@ -14,17 +14,17 @@ const NavbarList = (props) => {
       <NavbarItem
         href="#about"
         onClick={props.hidePopup}
-        title="About"
+        title="About Us"
+      />
+      <NavbarItem
+        href="#news"
+        onClick={props.hidePopup}
+        title="News &amp; Events"
       />
       <NavbarItem
         href="#admission"
         onClick={props.hidePopup}
-        title="Admission"
-      />
-      <NavbarItem
-        href="#contact"
-        onClick={props.hidePopup}
-        title="Contact"
+        title="Admissions"
       />
     </ul>
   );
