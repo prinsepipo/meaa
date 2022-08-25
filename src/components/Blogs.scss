@@ -1,0 +1,34 @@
+.blogs {
+  margin: 2rem 0;
+
+  .blog {
+    margin-bottom: 2rem;
+
+    &-image {
+      width: 100%;
+    }
+
+    &-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    &-date {
+      color: $color-fg-light;
+    }
+  }
+
+  &-navigator {
+    @include flex(center, center);
+
+    width: 180px;
+    height: 40px;
+
+    margin: 0 auto;
+
+    background: $color-primary;
+    color: $color-bg;
+
+    border-radius: 4px;
+  }
+}
