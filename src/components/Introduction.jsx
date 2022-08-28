@@ -8,7 +8,7 @@ import "./Introduction.scss";
 
 const Introduction = () => {
   return (
-    <section className="introduction">
+    <section className="introduction content-section">
       <div className="wrapper">
         <p>Introducing</p>
         <h1>Mandaue Ebenezer Alliance Academy</h1>

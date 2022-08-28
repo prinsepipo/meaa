@@ -1,0 +1,67 @@
+.levels {
+  &-header {
+    padding: 1rem;
+
+    .content-header {
+      margin: 0;
+    }
+  }
+
+  .level {
+    width: 300px;
+
+    margin: 2rem 0;
+
+    &:nth-child(odd) {
+      margin-left: auto;
+
+      text-align: right;
+
+      .level-title {
+        padding-left: 2rem;
+        padding-right: 0;
+
+        background: $color-tertiary;
+
+        text-align: left;
+      }
+    }
+
+    &-title {
+      padding: 1rem 0;
+      padding-right: 2rem;
+
+      background: $color-primary;
+      color: $color-bg;
+
+      text-align: right;
+    }
+
+    &-image {
+      width: 250px;
+
+      display: block;
+
+      margin: 0 auto;
+    }
+  }
+
+  .admission-button {
+    @include flex(center, center);
+
+    width: 90%;
+    height: 50px;
+
+    margin: 60px auto;
+
+    background: transparent;
+    color: $color-primary;
+
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+
+    svg {
+      margin-left: 10px
+    }
+  }
+}

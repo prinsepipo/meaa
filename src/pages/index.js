@@ -7,6 +7,7 @@ import Footer from "../layout/Footer";
 import Popup from "../components/popups/Popup";
 import Banner from "../components/Banner";
 import Introduction from "../components/Introduction";
+import Levels from "../components/Levels";
 import Blogs from "../components/Blogs";
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
         <main>
           <Banner />
           <Introduction />
+          <Levels />
           <Blogs />
         </main>
 

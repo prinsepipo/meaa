@@ -9,7 +9,7 @@ import "./Blogs.scss";
 
 const Blogs = () => {
   return (
-    <section className="blogs">
+    <section className="blogs content-section">
       <div className="wrapper">
         <ContentHeader>Blogs &amp; News</ContentHeader>
         {[1,2,3].map(i => {
