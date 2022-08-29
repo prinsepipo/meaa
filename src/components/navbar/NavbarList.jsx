@@ -7,22 +7,22 @@ const NavbarList = (props) => {
   return (
     <ul className="navbar-list">
       <NavbarItem
-        href="#home"
+        href="/"
         onClick={props.hidePopup}
         title="Home"
       />
       <NavbarItem
-        href="#about"
+        href="/about"
         onClick={props.hidePopup}
         title="About Us"
       />
       <NavbarItem
-        href="#news"
+        href="/news"
         onClick={props.hidePopup}
         title="News &amp; Events"
       />
       <NavbarItem
-        href="#admission"
+        href="/admission"
         onClick={props.hidePopup}
         title="Admissions"
       />

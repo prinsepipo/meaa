@@ -1,7 +1,7 @@
 .introduction {
   text-align: center;
 
-  h1 {
+  &-title {
     margin: 1rem 0;
 
     background: linear-gradient(135deg, #1a1ad6 0%, #7c08db 70%);
@@ -12,7 +12,13 @@
     line-height: 1.2;
   }
 
-  a {
+  &-details {
+    max-width: 720px;
+
+    margin: 0 auto;
+  }
+
+  &-navigator {
     display: block;
 
     margin-top: 1rem;

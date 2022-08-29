@@ -33,14 +33,16 @@ const Levels = () => {
       <div className="levels-header">
         <ContentHeader>Educational Levels</ContentHeader>
       </div>
-      {levels.map(l => {
-        return (
-          <div className="level">
-            <img className="level-image" src={l.image} alt={l.title + " illustration"} />
-            <h3 className="level-title">{l.title}</h3>
-          </div>
-        )
-      })}
+      <div className="levels-body">
+        {levels.map((l, i) => {
+          return (
+            <div className="level" key={i}>
+              <img className="level-image" src={l.image} alt={l.title + " illustration"} />
+              <h3 className="level-title">{l.title}</h3>
+            </div>
+          )
+        })}
+      </div>
       <a className="admission-button" href="/">Enrollment<FontAwesomeIcon icon={faGraduationCap} /></a>
     </div>
   );

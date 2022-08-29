@@ -10,10 +10,10 @@ const Introduction = () => {
   return (
     <section className="introduction content-section">
       <div className="wrapper">
-        <p>Introducing</p>
-        <h1>Mandaue Ebenezer Alliance Academy</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="/">Learn more about us. <FontAwesomeIcon icon={faArrowRight} /></a>
+        <p className="introduction-subtitle">Introducing</p>
+        <h1 className="introduction-title">Mandaue Ebenezer Alliance Academy</h1>
+        <p className="introduction-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a className="introduction-navigator" href="/">Learn more about us. <FontAwesomeIcon icon={faArrowRight} /></a>
       </div>
     </section>
   )

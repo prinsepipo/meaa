@@ -13,9 +13,9 @@ const Gallery = () => {
       <ContentHeader>Gallery</ContentHeader>
       <div className="gallery-body">
         <div className="gallery-grid">
-          {[1, 2, 3, 4].map(i => {
+          {[1, 2, 3, 4, 5, 6].map(i => {
             return (
-              <img className="gallery-grid-item" src={demo} alt="demo image" />
+              <img className="gallery-grid-item" src={demo} alt="gallery item" key={i} />
             );
           })}
         </div>

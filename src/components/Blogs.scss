@@ -1,6 +1,18 @@
 .blogs {
+
+  &-body {
+    @include flex(center, center, row, wrap);
+  }
+
   .blog {
+    max-width: 360px;
+
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 799px) {
+      margin: 0 1rem;
+      margin-bottom: 2rem;
+    }
 
     &-image {
       width: 100%;

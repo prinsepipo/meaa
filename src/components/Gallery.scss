@@ -1,7 +1,11 @@
 .gallery {
 
   &-body {
+    max-width: 900px;
+
     position: relative;
+
+    margin: 0 auto;
   }
 
   &-grid {
@@ -11,8 +15,21 @@
     &-item {
       width: 100%;
       height: 50vw;
+      max-height: calc(900px / 3);
 
       object-fit: cover;
+
+      &:nth-child(odd) {
+        background: $color-primary;
+      }
+    }
+
+    @media screen and (min-width: 719px) {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &-item {
+        height: 33vw;
+      }
     }
   }
 
