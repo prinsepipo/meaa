@@ -22,7 +22,7 @@ const NavbarList = (props) => {
         title="News &amp; Events"
       />
       <NavbarItem
-        to="/admission"
+        to="/admissions"
         onClick={props.hidePopup}
         title="Admissions"
       />
