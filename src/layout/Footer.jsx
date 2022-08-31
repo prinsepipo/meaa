@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { Link } from "gatsby";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -14,10 +16,10 @@ const Footer = () => {
         <div className="sitemap">
           <h3>Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">News &amp; Events</a></li>
-            <li><a href="/">Admissions</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/news">News &amp; Events</Link></li>
+            <li><Link to="/admissions">Admissions</Link></li>
           </ul>
         </div>
 

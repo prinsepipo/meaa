@@ -1,0 +1,15 @@
+.event-list {
+  margin-top: 2rem;
+
+  .event-item {
+    margin: 2rem 0;
+  }
+
+  .event-heading {
+    color: $color-primary;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    margin-bottom: 0.5rem;
+  }
+}
