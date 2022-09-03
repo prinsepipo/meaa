@@ -2,15 +2,17 @@ import * as React from "react";
 
 import { admissions } from "../../data";
 
+import ContentMain from "../common/ContentMain";
 import ContentHeader from "../common/ContentHeader";
 import Card from "../common/Card";
+
 
 import "./AdmissionsContent.scss";
 
 
 const AdmissionsContent = () => {
   return (
-    <main className="admissions wrapper">
+    <ContentMain className="admissions wrapper">
       <section className="admissions-body">
         <ContentHeader>Admission Requirements</ContentHeader>
 
@@ -29,7 +31,7 @@ const AdmissionsContent = () => {
           ))}
         </div>
       </section>
-    </main>
+    </ContentMain>
   );
 };
 

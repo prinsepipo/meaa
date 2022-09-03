@@ -17,14 +17,14 @@ const NavbarList = (props) => {
         title="About Us"
       />
       <NavbarItem
-        to="/news"
-        onClick={props.hidePopup}
-        title="News &amp; Events"
-      />
-      <NavbarItem
         to="/admissions"
         onClick={props.hidePopup}
         title="Admissions"
+      />
+      <NavbarItem
+        to="/blogs"
+        onClick={props.hidePopup}
+        title="Blogs &amp; News"
       />
     </ul>
   );

@@ -1,0 +1,16 @@
+.blogs {
+
+  &-navigator {
+    @include flex(center, center);
+
+    width: 180px;
+    height: 40px;
+
+    margin: 0 auto;
+
+    background: $color-primary;
+    color: $color-bg;
+
+    border-radius: 4px;
+  }
+}
