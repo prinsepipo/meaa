@@ -1,0 +1,16 @@
+.info {
+  height: 40px;
+
+  background: $color-tertiary;
+  color: $color-bg;
+
+  .wrapper {
+    @include flex-row-center;
+
+    height: 100%;
+  }
+
+  &-message {
+    font-size: 0.9rem;
+  }
+}
