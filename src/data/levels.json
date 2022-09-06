@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Nursery & Kindergarten",
+    "image": {
+      "src": "../images/kinder.png"
+    }
+  },
+  {
+    "title": "Elementary",
+    "image": {
+      "src": "../images/elementary.png"
+    }
+  },
+  {
+    "title": "High School",
+    "image": {
+      "src": "../images/highschool.png"
+    }
+  }
+]

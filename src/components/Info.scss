@@ -1,5 +1,7 @@
 .info {
-  height: 40px;
+  min-height: 40px;
+
+  padding: 0.5rem 0;
 
   background: $color-tertiary;
   color: $color-bg;
@@ -12,5 +14,6 @@
 
   &-message {
     font-size: 0.9rem;
+    text-align: center;
   }
 }

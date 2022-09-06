@@ -1,7 +1,10 @@
+const { resolve } = require("path");
+
 module.exports = {
+  pathPrefix: "/meaa",
   siteMetadata: {
-    title: `meaa`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "MEAA",
+    siteUrl: "https://prinsepipo.github.io/meaa",
   },
   plugins: [
     {
@@ -16,11 +19,20 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
+      options: {
+        "name": "data",
+        "path": resolve("./src/data/"),
+      },
+      __key: "data",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": resolve("./src/images/"),
       },
       __key: "images",
     },

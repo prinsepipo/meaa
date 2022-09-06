@@ -1,13 +1,40 @@
 import * as React from "react";
 
+import { useStaticQuery, graphql } from "gatsby";
+
 import Default from "../../layout/Default";
 import BlogView from "../../components/blogs/BlogView";
 
-import { blogs } from "../../data";
-
 
 const BlogPage = (props) => {
-  const blog = blogs.filter(b => b.id === parseInt(props.params.id))[0];
+  const data = useStaticQuery(graphql`
+    query {
+      allBlogsJson {
+        edges {
+          node {
+            id: jsonId
+            title
+            date
+            image {
+              src {
+                childImageSharp {
+                  gatsbyImageData(
+                    formats: JPG
+                    placeholder: BLURRED
+                  )
+                }
+              }
+            }
+            content
+          }
+        }
+      }
+    }
+  `);
+
+  const blogs = data.allBlogsJson.edges;
+
+  const blog = blogs.filter(b => b.node.id === parseInt(props.params.id))[0];
 
   return (
     <Default>

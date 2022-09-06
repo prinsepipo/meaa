@@ -1,13 +1,33 @@
 import * as React from "react";
 
-import ContentHeader from "./common/ContentHeader";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import demo from "../images/demo.jpg"
+import ContentHeader from "./common/ContentHeader";
 
 import "./Gallery.scss";
 
 
 const Gallery = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter:{sourceInstanceName:{eq:"images"}, relativePath:{eq:"demo.jpg"}}) {
+        edges {
+          node{
+            childImageSharp {
+              gatsbyImageData(
+                height: 300
+                placeholder: BLURRED
+              )
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const image = data.allFile.edges[0].node;
+
   return (
     <section className="gallery content-section">
       <ContentHeader>Gallery</ContentHeader>
@@ -15,7 +35,7 @@ const Gallery = () => {
         <div className="gallery-grid">
           {[1, 2, 3, 4, 5, 6].map(i => {
             return (
-              <img className="gallery-grid-item" src={demo} alt="gallery item" key={i} />
+              <GatsbyImage className="gallery-grid-item" image={getImage(image)} alt="gallery item" key={i} />
             );
           })}
         </div>

@@ -1,45 +1,54 @@
 import * as React from "react";
 
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 import ContentHeader from "./common/ContentHeader";
 
-import kinder from "../images/kinder.png";
-import elementary from "../images/elementary.png";
-import highschool from "../images/highschool.png";
-
 import "./Levels.scss";
 
 
-const levels = [
-  {
-    title: "Nursery & Kindergarten",
-    image: kinder,
-  },
-  {
-    title: "Elementary",
-    image: elementary,
-  },
-  {
-    title: "High School",
-    image: highschool,
-  },
-];
-
 const Levels = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allLevelsJson {
+        edges {
+          node {
+            title
+            image {
+              src {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 360
+                    placeholder: BLURRED
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const levels = data.allLevelsJson.edges;
+
+
   return (
     <div className="levels content-section">
       <div className="levels-header">
         <ContentHeader>Educational Levels</ContentHeader>
       </div>
       <div className="levels-body">
-        {levels.map((l, i) => {
+        {levels.map((item, i) => {
+          const l = item.node;
+
           return (
             <div className="level" key={i}>
-              <img className="level-image" src={l.image} alt={l.title + " illustration"} />
+              <GatsbyImage className="level-image" image={getImage(l.image.src)} alt={l.title + " illustration"} />
               <h3 className="level-title">{l.title}</h3>
             </div>
           )
