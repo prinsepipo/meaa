@@ -1,0 +1,3 @@
+/*! For license information please see a9a7754c-c3a8a1bcace8af9cc9c3.js.LICENSE.txt */
+"use strict";(self.webpackChunkmeaa=self.webpackChunkmeaa||[]).push([[112],{7190:function(e,a,c){c.d(a,{neY:function(){return n}});var n={prefix:"fab",iconName:"facebook",icon:[512,512,[62e3],"f09a","M504 256C504 119 393 8 256 8S8 119 8 256c0 123.8 90.69 226.4 209.3 245V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.3 482.4 504 379.8 504 256z"]}}}]);
+//# sourceMappingURL=a9a7754c-c3a8a1bcace8af9cc9c3.js.map
