@@ -31,11 +31,11 @@ const Footer = () => {
           </div>
           <div className="contact-section">
             <span><FontAwesomeIcon icon={faPhone} /></span>
-            <p>(032) 343 6630</p>
+            <p>(000) 000 0000</p>
           </div>
           <div className="contact-section">
             <span><FontAwesomeIcon icon={faEnvelope} /></span>
-            <a href="mailto:meaa.com.edu@gmail.com">meaa.com.edu@gmail.com</a>
+            <a href="mailto:testemail@mail.com">testemail@mail.com</a>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/people/Mandaue-Ebenezer-Alliance-Academy/100057089814574/"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
 
       <div className="copyright">
-        <p>Copyright &copy; 2022 MEAA</p>
+        <p>Copyright &copy; 2022</p>
       </div>
     </footer>
   );
